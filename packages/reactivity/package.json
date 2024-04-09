@@ -1,0 +1,35 @@
+{
+	"name": "@svelteuse/reactivity",
+	"description": "A reactivity library for Svelte",
+	"version": "0.0.0",
+	"main": "dist/index.js",
+	"types": "dist/index.d.ts",
+	"files": [
+		"dist",
+		"README.adoc",
+		"package.json"
+	],
+	"author": {
+		"name": "Hugo Korte",
+		"email": "hugokorteapple@gmail.com",
+		"url": "https://hugokorte.pages.dev/"
+	},
+	"scripts": {
+		"dev": "tsc -w",
+		"build": "tsc",
+		"format": "biome format --write .",
+		"lint": "biome lint .",
+		"release": "pnpm run build && changeset publish"
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.6.4",
+		"@changesets/cli": "^2.27.1",
+		"svelte": "5.0.0-next.95",
+		"typescript": "^5.4.4"
+	},
+	"type": "module",
+	"license": "MIT"
+}
